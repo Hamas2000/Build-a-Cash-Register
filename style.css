@@ -38,7 +38,8 @@ button {
   color: white;
 }
 
-#change-due, #cash-in-drawer {
+#change-due,
+#cash-in-drawer {
   margin-bottom: 1.5rem;
   font-size: 18px;
 }
