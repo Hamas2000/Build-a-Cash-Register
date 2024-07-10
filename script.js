@@ -36,12 +36,12 @@ const checkRegister = () => {
     displayChangeDue.innerText = 'Customer does not have enough money to purchase the item';
     return;
   }
-  
+
   if (cashInt === price) {
     displayChangeDue.innerText = 'No change due - customer paid with exact cash';
     return;
   }
-  
+
   if (cash.value === '') {
     return;
   }
@@ -59,7 +59,7 @@ const checkRegister = () => {
   const changeArr = [];
   const cidCopy = [...cid];
 
-  for (let i = 0; i < denominations.length; i++) {
+  for (let i = 0; i < denominations.length; i += 1) {
     let totalDenom = 0;
     while (change >= denominations[i] && cidCopy[cidCopy.length - 1 - i][1] > 0) {
       cidCopy[cidCopy.length - 1 - i][1] -= denominations[i];
