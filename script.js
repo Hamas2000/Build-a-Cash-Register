@@ -53,7 +53,7 @@ const checkRegister = () => {
 
   const denominations = [100, 20, 10, 5, 1, 0.25, 0.1, 0.05, 0.01];
   const denominationNames = [
-    'ONE HUNDRED', 'TWENTY', 'TEN', 'FIVE', 'ONE', 
+    'ONE HUNDRED', 'TWENTY', 'TEN', 'FIVE', 'ONE',
     'QUARTER', 'DIME', 'NICKEL', 'PENNY',
   ];
   const changeArr = [];
