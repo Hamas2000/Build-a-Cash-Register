@@ -58,6 +58,6 @@ This application offers the following key features:
 
 For any inquiries or support, please reach out to:
 
-- GitHub: [Your GitHub Profile](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/yourlinkedinprofile)
-- Email: [Your Email Address](mailto:youremail@example.com)
+- GitHub: [hamas2000](https://github.com/Hamas2000)
+- LinkedIn: [Hamasa Noorzai](http://www.linkedin.com/in/hamasa-noorzai-6787a6196)
+- Email: [Hamasa Noorzai](mailto:hamasa.noorzai2000@gmail.com)
