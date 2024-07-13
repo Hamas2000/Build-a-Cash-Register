@@ -27,6 +27,11 @@ const displayCashInDrawer = () => {
 
 const checkRegister = () => {
   const cashInt = parseFloat(cash.value);
+  if (isNaN(cashInt) || cash.value === '') {
+    displayChangeDue.innerText = 'Please enter a valid amount';
+    return;
+  }
+
   let change = Number((cashInt - price).toFixed(2));
   const totalCid = Number(cid.reduce((total, sum) => total + sum[1], 0).toFixed(2));
 
@@ -39,10 +44,6 @@ const checkRegister = () => {
 
   if (cashInt === price) {
     displayChangeDue.innerText = 'No change due - customer paid with exact cash';
-    return;
-  }
-
-  if (cash.value === '') {
     return;
   }
 
@@ -63,7 +64,7 @@ const checkRegister = () => {
     let totalDenom = 0;
     while (change >= denominations[i] && cidCopy[cidCopy.length - 1 - i][1] > 0) {
       cidCopy[cidCopy.length - 1 - i][1] -= denominations[i];
-      change -= denominations[i];
+      change = Number((change - denominations[i]).toFixed(2)); // Fix floating-point precision
       totalDenom += denominations[i];
     }
 
