@@ -27,7 +27,7 @@ const displayCashInDrawer = () => {
 
 const checkRegister = () => {
   const cashInt = parseFloat(cash.value);
-  if (isNaN(cashInt) || cash.value === '') {
+  if (Number.isNaN(cashInt) || cash.value === '') {
     displayChangeDue.innerText = 'Please enter a valid amount';
     return;
   }
